@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#8cccff" >
+	
+	<LinearLayout		
+		android:id="@+id/server_list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		>
+	
+			<ListView
+				android:id="@+id/list"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:fastScrollEnabled="true"						
+				/>
+			<ImageView 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:src="@android:drawable/divider_horizontal_bright"
+				/>
+	</LinearLayout>
+			
+
+	<LinearLayout
+		android:id="@+id/server_add"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#c7ecf6"
+		
+		>
+		<TextView
+			android:id="@+id/adress"
+			android:layout_centerHorizontal="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="서버 ip "
+			/>
+		<EditText
+			android:id="@+id/textAdress"	
+			android:layout_centerHorizontal="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			/>
+		<TextView
+			android:id="@+id/name"
+			android:layout_centerHorizontal="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="서버 이름"
+			/>
+		<EditText
+			android:id="@+id/textName"
+			android:layout_centerHorizontal="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			/>
+
+		<TextView
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:text="아이콘 선택" />
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:background="#92ffffff"
+		    android:padding="10dp" >
+
+		    <ImageView
+		        android:id="@+id/imageview_freeView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/desktop_icon" />
+
+		 	<RadioGroup
+		 	    android:layout_width="match_parent" 
+		 	    android:layout_height="wrap_content"
+		 	    android:orientation="horizontal"	 	    
+		 	    >
+		 	    <RadioButton
+		 	        android:id="@+id/radiobtn1"
+		 	        android:text="1" 
+		 	        android:layout_marginLeft="20dp"  
+		 	      
+		 	        
+		 	        />
+		 	    <RadioButton 
+		 	        android:text="2"
+		 	        android:layout_marginLeft="20dp"
+		 	        />
+		 	    <RadioButton 
+		 	        android:text="3"
+		 	        android:layout_marginLeft="20dp"
+		 	        />
+		 	</RadioGroup>    
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="right" >
+
+		    <Button
+		        android:id="@+id/buttonCancel"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="취소" />
+
+		    <Button
+		        android:id="@+id/buttonAdd"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="추가" />
+		</LinearLayout>
+		
+	</LinearLayout>>
+</FrameLayout>
